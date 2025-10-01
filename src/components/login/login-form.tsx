@@ -36,19 +36,36 @@ export default function LoginForm() {
 
   return (
     <>
-      <form action={action} className={styles.form}>
-        <Input label="Usuário" name="username" type="text" />
-        <Input label="Senha" name="password" type="password" />
+      <form
+        action={action}
+        className={styles.form}
+      >
+        <Input
+          label='Usuário'
+          name='username'
+          type='text'
+        />
+        <Input
+          label='Senha'
+          name='password'
+          type='password'
+        />
         <ErrorMessage error={state.error} />
         <FormButton />
       </form>
-      <Link className={styles.perdeu} href="/login/perdeu">
+      <Link
+        className={styles.perdeu}
+        href='/login/perdeu'
+      >
         Perdeu a senha?
       </Link>
       <div className={styles.cadastro}>
         <h2 className={styles.subtitle}>Cadastre-se</h2>
         <p>Ainda não possui conta? Cadastre-se no site.</p>
-        <Link className="button" href="/login/criar">
+        <Link
+          className='button'
+          href='/login/criar'
+        >
           Cadastro
         </Link>
       </div>
