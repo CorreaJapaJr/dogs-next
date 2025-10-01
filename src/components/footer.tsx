@@ -1,18 +1,16 @@
 import Image from 'next/image';
-import styles from './Footer.module.css';
+import styles from './footer.module.css';
 
-const Footer = () => {
+export default async function Footer() {
   return (
     <footer className={styles.footer}>
       <Image
-        src={'/dogs-footer.svg'}
-        alt='footer'
+        src={'/assets/dogs-footer.svg'}
+        alt="Dogs"
         width={28}
         height={22}
       />
-      <p>Apaji, alguns dos direitos reservados</p>
+      <p>Dogs. Alguns direitos reservados.</p>
     </footer>
   );
-};
-
-export default Footer;
+}

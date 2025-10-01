@@ -5,7 +5,7 @@ export default async function PerfilUserPage({
 }) {
   return (
     <main>
-      <h1>Usuário {params.user}</h1>
+      <h1>Usuário: {params.user}</h1>
     </main>
   );
 }

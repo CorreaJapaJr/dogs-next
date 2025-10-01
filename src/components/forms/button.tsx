@@ -5,10 +5,7 @@ type ButtonType = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = ({ children, ...props }: ButtonType) => {
   return (
-    <button
-      {...props}
-      className={styles.button}
-    >
+    <button {...props} className={styles.button}>
       {children}
     </button>
   );

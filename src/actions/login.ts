@@ -2,7 +2,6 @@
 
 import { TOKEN_POST } from '@/functions/api';
 import apiError from '@/functions/api-error';
-
 import { cookies } from 'next/headers';
 
 export default async function login(state: {}, formData: FormData) {

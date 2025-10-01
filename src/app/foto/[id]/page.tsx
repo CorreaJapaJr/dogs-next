@@ -5,7 +5,7 @@ export default async function FotoIdPage({
 }) {
   return (
     <main>
-      <h1>foto: id: {params.id}</h1>
+      <h1>Foto id: {params.id}</h1>
     </main>
   );
 }

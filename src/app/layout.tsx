@@ -5,8 +5,8 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
-  title: 'Apaji Next',
-  description: 'Criado por Apaji',
+  title: 'Dogs Next',
+  description: 'Rede social para cachorros.',
 };
 
 export default function RootLayout({
@@ -15,11 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='pt-BR'>
+    <html lang="pt-BR">
       <body className={type_second.variable}>
-        <div className='App'>
+        <div className="App">
           <Header />
-          <main className='AppBody'>{children}</main>
+          <main className="AppBody">{children}</main>
           <Footer />
         </div>
       </body>
