@@ -5,8 +5,8 @@ export default async function Footer() {
   return (
     <footer className={styles.footer}>
       <Image
-        src={'/assets/dogs-footer.svg'}
-        alt="Dogs"
+        src={'/dogs-footer.svg'}
+        alt='Dogs'
         width={28}
         height={22}
       />

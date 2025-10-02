@@ -6,7 +6,7 @@ export default async function verifyToken(token: string): Promise<boolean> {
     // await jwtVerify(
     //   token,
     //   new TextEncoder().encode(
-    //     'jXwl,=MRs<P-bJ;z>HAm?KJRp|e0xS0b-)u_+-3Gj^zd}V1%^-2|XCf#T!B_%Xli',
+    //     'CÓDIGO DO TOKEN',
     //   ),
     //   {
     //     algorithms: ['HS256'],

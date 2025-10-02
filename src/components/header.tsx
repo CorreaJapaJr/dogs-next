@@ -9,21 +9,30 @@ export default async function Header() {
   return (
     <header className={styles.header}>
       <nav className={`${styles.nav} container`}>
-        <Link className={styles.logo} href={'/'}>
+        <Link
+          className={styles.logo}
+          href={'/'}
+        >
           <Image
-            src={'/assets/dogs.svg'}
-            alt="Dogs"
+            src={'/dogs.svg'}
+            alt='Dogs'
             width={28}
             height={22}
             priority
           />
         </Link>
         {data ? (
-          <Link className={styles.login} href={'/conta'}>
+          <Link
+            className={styles.login}
+            href={'/conta'}
+          >
             {data.username}
           </Link>
         ) : (
-          <Link className={styles.login} href={'/login'}>
+          <Link
+            className={styles.login}
+            href={'/login'}
+          >
             Login / Criar
           </Link>
         )}
