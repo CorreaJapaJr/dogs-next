@@ -52,9 +52,21 @@
   content: '';
   display: inline-block;
   margin-right: 0.25rem;
-  background: url('/visualizacao.svg') no-repeat;
+  background: url('/assets/visualizacao.svg') no-repeat;
 }
 
 .photo:hover .visualizacao {
   display: flex;
+}
+
+.loadingWrapper {
+  display: flex;
+  height: 100px;
+  margin: 1rem auto;
+}
+
+.loadingWrapper p {
+  text-align: center;
+  margin: auto;
+  color: #888;
 }
