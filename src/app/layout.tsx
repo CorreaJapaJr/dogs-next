@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   title: 'Dogs Next',
   description: 'Rede social para cachorros.',
   icons: {
-    icon: '/favicon.ico.png',
-    shortcut: '/favicon.ico.png',
+    icon: '/favicon-ico.png',
+    shortcut: '/favicon-ico.png',
     apple: '/apple-touch-icon.png',
   },
 };
