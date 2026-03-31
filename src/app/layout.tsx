@@ -1,7 +1,7 @@
 // src/app/layout.tsx
 import type { Metadata } from 'next';
 import './globals.css';
-import { type_second } from '@/functions/fonts';
+import { type_second, type_mono } from '@/functions/fonts';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import { UserContextProvider } from '@/context/user-context';
@@ -26,7 +26,7 @@ export default async function RootLayout({
 
   return (
     <html lang='pt-BR'>
-      <body className={type_second.variable}>
+      <body className={`${type_second.variable} ${type_mono.variable}`}>
         <UserContextProvider user={user}>
           <div className='App'>
             <Header />

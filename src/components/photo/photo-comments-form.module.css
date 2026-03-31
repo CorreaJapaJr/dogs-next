@@ -3,6 +3,9 @@
   grid-template-columns: 1fr auto;
   align-items: stretch;
   margin: 1rem;
+  border: 2px solid #332d2b;
+  background: #fffcf0;
+  box-shadow: 4px 4px 0px #332d2b;
 }
 
 .single.form {
@@ -15,40 +18,40 @@
   font-size: 1rem;
   font-family: var(--type-first);
   resize: none;
-  border: 1px solid #eee;
-  padding: 0.5rem;
-  border-radius: 0.2rem;
-  background: #eee;
-  transition: 0.2s;
+  border: none;
+  padding: 0.8rem;
+  background: transparent;
+  transition: 0.1s;
+  color: #332d2b;
 }
 
-.textarea:focus,
-.textarea:hover {
+.textarea:focus {
   outline: none;
-  border-color: #fb1;
   background: white;
-  box-shadow: 0 0 0 3px #fea;
 }
 
 .button {
   border: none;
+  border-left: 2px solid #332d2b;
   cursor: pointer;
-  color: #333;
-  background: transparent;
+  color: #332d2b;
+  background: #fb1;
   font-size: 1rem;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
   overflow: hidden;
+  transition: 0.1s;
 }
 
 .button:focus,
 .button:hover {
   outline: none;
+  background: #ffc107;
 }
 
 .button:focus svg path,
 .button:hover svg path {
-  fill: #fea;
-  stroke: #fb1;
+  fill: #332d2b;
+  stroke: #332d2b;
 }
 
 .button:focus svg g,

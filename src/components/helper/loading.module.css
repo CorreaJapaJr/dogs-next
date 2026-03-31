@@ -1,30 +1,39 @@
 .wrapper {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100vh;
   display: flex;
   top: 0px;
   left: 0px;
   z-index: 1000;
-  background: rgba(0,0,0,.5);
+  background: rgba(253, 248, 230, 0.8);
 }
 
 .wrapperNoModal {
-  margin: auto;
+  margin: 2rem auto;
+  position: relative;
+  height: auto;
 }
 
 .loading {
   margin: auto;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  padding-left: 5px;
-  background: rgba(255, 255, 255, 0.5);
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: #fb1;
+  border: 4px solid #332d2b;
+  box-shadow: 4px 4px 0px #332d2b;
+  animation: retroRotate 0.8s infinite steps(4);
+}
+
+@keyframes retroRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .wrapperNoModal .loading {
-  background: rgba(0, 0, 0, 0.05);
+  background: #fb1;
 }
