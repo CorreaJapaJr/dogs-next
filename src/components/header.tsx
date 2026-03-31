@@ -1,10 +1,10 @@
-import Link from 'next/link';
-import styles from './header.module.css';
-import Image from 'next/image';
-import userGet from '@/actions/user-get';
+import Link from 'next/link'
+import styles from './header.module.css'
+import Image from 'next/image'
+import userGet from '@/actions/user-get'
 
 export default async function Header() {
-  const { data } = await userGet();
+  const { data } = await userGet()
 
   return (
     <header className={styles.header}>
@@ -16,7 +16,7 @@ export default async function Header() {
           <Image
             src={'/dogs.svg'}
             alt='Dogs'
-            width={28}
+            width={29}
             height={22}
             priority
           />
@@ -38,5 +38,5 @@ export default async function Header() {
         )}
       </nav>
     </header>
-  );
+  )
 }
